@@ -14,10 +14,7 @@ public class Main {
         System.out.println(dadosCliente);
         System.out.println("             Saldo da conta: R$ "+saldo);
         System.out.println(quebraLinha);
-
-        while(exibirMenu){
-            Scanner teclado = new Scanner(System.in);
-            String menu = """
+        String menu = """
                     
                     Operações
                     
@@ -28,6 +25,9 @@ public class Main {
                     
                     Digite a opção desejada:
                     """;
+        Scanner teclado = new Scanner(System.in);
+
+        while(exibirMenu){
             System.out.println(menu);
             int opcao = teclado.nextInt();
             switch (opcao){
